@@ -1,0 +1,82 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class MarrayListInput {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> n = new ArrayList<>();
+        
+        // Add elements to the ArrayList based on user input
+        System.out.println("Enter the number of elements you want to add:");
+        int size = sc.nextInt();
+        
+        System.out.println("Enter " + size + " integer elements:");
+        for (int i = 0; i < size; i++) {
+            n.add(sc.nextInt());
+        }
+        
+        System.out.println("Initial ArrayList: " + n);
+        
+        // Get an element
+        System.out.println("Enter an index to retrieve an element (0 to " + (n.size() - 1) + "):");
+        int index = sc.nextInt();
+        if (index >= 0 && index < n.size()) {
+            int e = n.get(index);
+            System.out.println("Element at index " + index + ": " + e);
+        } else {
+            System.out.println("Invalid index.");
+        }
+        
+        // Add an element at a specific index
+        System.out.println("Enter a value to insert and the index to insert at:");
+        int valueToAdd = sc.nextInt();
+        int addIndex = sc.nextInt();
+        if (addIndex >= 0 && addIndex <= n.size()) {
+            n.add(addIndex, valueToAdd);
+            System.out.println("ArrayList after adding " + valueToAdd + " at index " + addIndex + ": " + n);
+        } else {
+            System.out.println("Invalid index for insertion.");
+        }
+        
+        // Set (replace) an element at a specific index
+        System.out.println("Enter an index to replace and a new value:");
+        int setIndex = sc.nextInt();
+        int newValue = sc.nextInt();
+        if (setIndex >= 0 && setIndex < n.size()) {
+            n.set(setIndex, newValue);
+            System.out.println("ArrayList after replacing value at index " + setIndex + " with " + newValue + ": " + n);
+        } else {
+            System.out.println("Invalid index for replacement.");
+        }
+        
+        // Remove an element
+        System.out.println("Enter an index to remove an element:");
+        int removeIndex = sc.nextInt();
+        if (removeIndex >= 0 && removeIndex < n.size()) {
+            n.remove(removeIndex);
+            System.out.println("ArrayList after removing element at index " + removeIndex + ": " + n);
+        } else {
+            System.out.println("Invalid index for removal.");
+        }
+        
+        // Print size of the ArrayList
+        System.out.println("Size of the ArrayList: " + n.size());
+        
+        // Loop through and print all elements
+        System.out.println("Elements in the ArrayList:");
+        for (int i = 0; i < n.size(); i++) {
+            System.out.print(n.get(i) + " ");
+        }
+        System.out.println();
+        
+        // Sort the ArrayList
+        Collections.sort(n);
+        System.out.println("ArrayList after sorting: " + n);
+        
+        sc.close();
+    }
+}
+ {
+    
+}

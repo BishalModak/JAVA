@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "recursiveIterative",
+            "request": "launch",
+            "mainClass": "Recursive.recursiveIterative",
+            "projectName": "Java Tutorial_c8321396"
+        },
+        {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "Java Tutorial_c8321396"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Deque",
+            "request": "launch",
+            "mainClass": "Deque",
+            "projectName": "Java Tutorial_c8321396"
+        },
+        {
+            "type": "java",
+            "name": "main",
+            "request": "launch",
+            "mainClass": "Generics.main",
+            "projectName": "Java Tutorial_c8321396"
+        },
+        {
+            "type": "java",
+            "name": "Hashsets",
+            "request": "launch",
+            "mainClass": "Hashsets",
+            "projectName": "Java Tutorial_c8321396"
+        },
+        {
+            "type": "java",
+            "name": "MArrayLists",
+            "request": "launch",
+            "mainClass": "MArrayLists",
+            "projectName": "Java Tutorial_c8321396"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Java Tutorial_c8321396"
+        },
+        {
+            "type": "java",
+            "name": "Stacks",
+            "request": "launch",
+            "mainClass": "Stacks",
+            "projectName": "Java Tutorial_c8321396"
+        },
+        {
+            "type": "java",
+            "name": "exceptionHandleing",
+            "request": "launch",
+            "mainClass": "exceptionHandleing",
+            "projectName": "Java Tutorial_c8321396"
+        }
+    ]
+}
